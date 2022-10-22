@@ -1,32 +1,38 @@
 .main {
     margin-top: 21rem;
+    // border: 1px solid;
+    // width: 170%;
 
-    .container {
-        display: flex;
-        flex-direction: column;
+    .firstSection,
+    .secondSection {
 
-        .title {
-            color: #EB3030;
-            font-size: 3.2rem;
-            font-weight: 400;
-        }
+        .container {
+            display: flex;
+            flex-direction: column;
 
-        .subtitle {
-            width: 440px;
-            font-size: 3.5rem;
-            font-weight: 400;
-            line-height: 3.5rem;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-        }
+            .title {
+                color: #EB3030;
+                font-size: 3.2rem;
+                font-weight: 400;
+            }
 
-        .paragraph {
-            width: 49.9rem;
-            font-size: 2rem;
-            font-weight: 400;
-            line-height: 2rem;
-            color: rgba(65, 62, 62, 0.69);
-            letter-spacing: 0.06rem;
+            .subtitle {
+                width: 440px;
+                font-size: 3.5rem;
+                font-weight: 400;
+                line-height: 3.5rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .paragraph {
+                max-width: 49.9rem;
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 2rem;
+                color: rgba(65, 62, 62, 0.69);
+                letter-spacing: 0.06rem;
+            }
         }
     }
 
@@ -160,15 +166,29 @@
 
 @media screen and (max-width:768px) {
     .secondSection {
-      .events{
-        flex-wrap: wrap;
-        width: 127%;
-      }
+        .events {
+            flex-wrap: wrap;
+            width: 127%;
+        }
     }
 }
+
 @media screen and (max-width:375px) {
     .main {
-        width: calc(100% - 8rem);
+        // width: calc(100% - 8rem);
+        .container {
+            .title {
+                font-size: 4rem;
+            }
+
+            .subtitle {
+                font-size: 4rem;
+                max-width: 600px;
+            }
+            .paragraph {
+                font-size: 4rem;
+            }
+        }
     }
 
     .firstSection {

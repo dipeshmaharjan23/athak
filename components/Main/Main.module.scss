@@ -1,8 +1,6 @@
-.main{
-    margin-top: 8rem;
-
-
+    
     .container{
+        margin-top: 8rem;
         display: flex;
 
         .left{
@@ -20,6 +18,8 @@
                 line-height: 3rem;
                 color: 
                 rgba(0, 0, 0, 0.6);
+                word-spacing: 0.5rem;
+
 
                 .bold{
                     color: 
@@ -73,7 +73,6 @@
             padding-right: 10rem;
         }
     }
-}
 
 @media screen and (max-width:768px) {
     .container{
@@ -84,6 +83,16 @@
             padding-right: 6rem !important;
             padding-left: 3rem  !important ;
           
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    .container{
+        .left{
+            p{
+                font-size: 3rem;
+                line-height: 4rem;
+            }
         }
     }
 }
