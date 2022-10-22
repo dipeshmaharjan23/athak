@@ -1,0 +1,40 @@
+.container {
+    max-width: 1203px;
+    min-height: 284px;
+    background: #F8F8F8;
+    box-shadow: 10px 10px 20px rgba(217, 217, 217, 0.76);
+    border-radius: 10px;
+    margin-top: 11.4rem;
+    display: flex;
+    justify-content: space-between;
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            font-size: 2.6rem;
+            font-weight: 500;
+            max-width: 600px;
+            line-height: 3.9rem;
+        }
+
+        span {
+            font-size: 1.9rem;
+            font-weight: 400;
+            text-align: end;
+            margin-right: 4rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:1130px) {
+    .container {
+        flex-wrap: wrap;
+        // height: ;
+        gap: 3rem;
+
+    }
+}

@@ -1,0 +1,196 @@
+.main {
+    margin-top: 21rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            color: #EB3030;
+            font-size: 3.2rem;
+            font-weight: 400;
+        }
+
+        .subtitle {
+            width: 440px;
+            font-size: 3.5rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .paragraph {
+            width: 49.9rem;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2rem;
+            color: rgba(65, 62, 62, 0.69);
+            letter-spacing: 0.06rem;
+        }
+    }
+
+    .firstSection {
+        .images {
+            display: flex;
+            margin-bottom: 19.6rem;
+            margin-top: 5.6rem;
+            width: 100%;
+            // gap: 5rem;
+
+            .left {
+                display: flex;
+                position: relative;
+                width: 100%;
+
+                .image1 {
+                    z-index: 100;
+                }
+
+                .image2 {
+                    position: absolute;
+                    top: 6rem;
+                    left: 24rem;
+                }
+            }
+
+            .right {
+                display: flex;
+                position: relative;
+                width: 100%;
+
+                .image3 {
+                    z-index: 100;
+                }
+
+                .image4 {
+                    position: absolute;
+                    top: 6rem;
+                    left: 24rem;
+                }
+
+            }
+
+        }
+    }
+
+    .secondSection {
+        .events {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            align-items: center;
+
+            .eventicon {
+                font-size: 3rem;
+
+                &:hover {
+                    color: #EB3030;
+                }
+            }
+
+            .event {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+
+                .status {
+                    color: #fff;
+                    width: 7.2rem;
+                    height: 2rem;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Poppins';
+                    position: absolute;
+                    top: 9rem;
+                    right: 3.1rem;
+                }
+
+                .upcoming {
+                    background: #1067F8;
+                }
+
+                .ongoing {
+                    background: #128400;
+                }
+
+                .eventimage {
+                    margin-top: 5rem;
+
+                }
+
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 1.2rem;
+                }
+
+                .blue {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    font-weight: normal;
+                    font-family: 'Poppins';
+                    color: #0017E4;
+                    cursor: pointer;
+                }
+
+                .grey {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    font-family: 'Poppins';
+                    color: rgba(65, 62, 62, 0.69);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1295px) {
+    .firstSection {
+        .images {
+            flex-wrap: wrap;
+            gap: 8rem;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .secondSection {
+      .events{
+        flex-wrap: wrap;
+        width: 127%;
+      }
+    }
+}
+@media screen and (max-width:375px) {
+    .main {
+        width: calc(100% - 8rem);
+    }
+
+    .firstSection {
+        .images {
+            flex-wrap: wrap;
+            gap: 8rem;
+
+            .left {
+                .image2 {
+                    img {
+                        width: 310px;
+                    }
+                }
+            }
+
+            .right {
+                .image4 {
+                    img {
+                        width: 310px;
+                    }
+                }
+            }
+        }
+    }
+}

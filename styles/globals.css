@@ -1,9 +1,24 @@
+@font-face {
+  font-family: "Aakriti";
+  src: url("/fonts/Aakriti-Regular.ttf");
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -13,7 +28,10 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
 
 @media (prefers-color-scheme: dark) {
   html {

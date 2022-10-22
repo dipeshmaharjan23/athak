@@ -1,0 +1,117 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 8rem 0rem 8rem 0rem;
+    user-select: none;
+  
+    @media screen and (max-width: 950px) {
+      padding: 4rem;
+    }
+  
+    .footer_links {
+      display: flex;
+      gap:15rem;
+      flex-wrap: wrap;
+      // grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      // column-gap: 5rem;
+      // row-gap: 5rem;
+  
+      @media screen and (max-width: 380px) {
+        column-gap: 1.5rem;
+        row-gap: 6rem;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      }
+  
+      .list {
+        margin-top: 1rem;
+        h3 {
+          margin-bottom: 2.5rem;
+          font-size: 2.6rem;
+          font-weight: 500;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          list-style-type: none;
+          font-size: 2rem;
+          color:#000;
+          font-weight: 400;
+  
+          > li {
+            &:hover {
+              color: #c41e24;
+            }
+          }
+        }
+        .place {
+          margin-bottom: 2rem;
+  
+          &:hover {
+            color: #718096;
+          }
+        }
+      }
+  
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        margin-top: 5rem;
+  
+        .name {
+          font-size: 2.4rem;
+          font-weight: 700;
+          color: #c41e24;
+          cursor: pointer;
+        }
+      }
+      .paragraph {
+        font-size: 1.9rem;
+        font-weight: 400;
+        line-height: 3rem;
+        margin-top: 2.4rem;
+        color: rgba(0, 0, 0, 0.6);
+
+        .bold{
+          color: 
+          rgba(0, 0, 0, 1);
+        }
+      }
+    }
+    .para {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 21.09px;
+      color: rgba(0, 0, 0, 0.85);
+      
+      text-align: center;
+    }
+    .author{
+      max-width: 31.5rem;
+    }
+  
+    .social{
+      h3 {
+        margin-bottom: 3.8rem;
+        font-size: 2.6rem;
+        font-weight: 500;
+        margin-top: 1rem;
+      }
+      .socialicon{
+        display: flex;
+        font-size: 4rem;
+        gap:0.7rem;
+        cursor: pointer;
+        
+        a{
+          &:hover {
+            color: #c41e24;
+          }
+        }
+      }
+    }
+  }
+  
